@@ -1,0 +1,26 @@
+//Hasan
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+
+int main()
+{   
+    int t;
+    cin>>t;
+    while(t--){
+            int s=0, s1=0;
+            string a;
+            cin>>a;
+            for(int i=0;i<6;i++){
+
+                if(i<3) s+=a[i]-'0';
+                else s1+=a[i]-'0';
+            }
+        
+        if(s==s1) cout<<"YES"<<endl;
+        else cout<<"NO"<<endl;
+    }
+
+    return 0;
+}
